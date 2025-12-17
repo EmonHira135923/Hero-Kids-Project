@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+
 import { FaStar } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
@@ -17,7 +15,6 @@ const ProductCard = ({ product }) => {
           src={image}
           alt={title}
           className="rounded-md w-full h-48 object-cover"
-          onLoad={() => setLoading(false)}
         />
       </figure>
 

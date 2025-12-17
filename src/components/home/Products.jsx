@@ -4,7 +4,7 @@ import ProductCard from "../carrds/ProductCard";
 import { getProducts } from "@/actions/server/product";
 
 const Products = async () => {
-  const products = (await getProducts()) || [];
+  const products = await getProducts();
   return (
     <div>
       <h2 className="text-center text-4xl font-bold mb-10">Our Products</h2>
