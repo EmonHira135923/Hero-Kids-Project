@@ -5,6 +5,7 @@ import { useState } from "react";
 import { postUser } from "@/actions/server/auth";
 import { useSearchParams } from "next/navigation";
 import { signIn } from "next-auth/react";
+import Swal from "sweetalert2";
 
 export const RegisterForm = () => {
   const params = useSearchParams();
